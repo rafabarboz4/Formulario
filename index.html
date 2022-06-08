@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div>
+        <h1 id="titulo">Formulario</h1>
+        <p id="subtitulo">Formulario de pesquisa.</p>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome:</strong></label>
+                <input type="text" name="Nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome:</strong></label>
+                <input type="text" name="Sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>Email:</strong></label>
+            <input type="email" name="E-mail" id="email" required>
+        </div>
+
+        <div class="campo">
+            <label><strong>Genero:</strong></label>
+            <label>
+                <input type="radio" name="Masculino" value="masculino">Masculino
+            </label>
+            <label>
+                <input type="radio" name="Feminino" value="feminino">Feminino
+            </label>
+            <label>
+                <input type="radio" name="Outro" value="outro">Outro
+            </label>
+        </div>
+
+        <div class="campo">
+            <br>
+            <label><strong>Conte um pouco sobre você</strong></label>
+            <textarea name="descricao" id="descricao" cols="50" rows="10"></textarea>
+        </div>
+
+        <button type="submit" class="botao">Concluido</button>
+
+    </form>
+    
+</body>
+</html>
